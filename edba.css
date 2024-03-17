@@ -11,7 +11,7 @@ body{
 .block1{
     display: flex;
     width: 100%;
-    position:fixed;
+    /* position:fixed; */
 }
 .block1 a{
     text-decoration: none;
@@ -328,6 +328,7 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color: #edebeb;
+    margin-bottom: 20px;
 }
 .block5-card{
     display: flex;
@@ -358,6 +359,7 @@ body{
 /* <!-- testimonials --> */
 /* <!-- footer -->  */
 footer{
+    margin-top: 30px;
     background-color: #151416;
     color: white;
     display: flex;
