@@ -11,6 +11,7 @@ body{
 .block1{
     display: flex;
     width: 100%;
+    position:fixed;
 }
 .block1 nav {
     display: flex;
@@ -20,7 +21,7 @@ body{
     color: white;
     align-items: center;
     justify-content: space-around;
-    position: sticky;
+    position: static;
 }
 .block1 .logo{
     padding: 0%;
@@ -243,6 +244,7 @@ body{
 .block4 h3{
     font-size: 30px;
 }
+
 /* transitions  */
 /* .card1 {
     position: relative;
@@ -292,6 +294,39 @@ body{
     }
   }
 /* <!-- latest work --> */
+.block5{
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #edebeb;
+}
+.block5-card{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    margin: -0px 10px;
+    background-color: white;
+
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 2s ease-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.block5-card h3{
+    margin-bottom: 10px;
+}
 /* <!-- testimonials --> */
 /* <!-- footer -->  */
 footer{
@@ -300,4 +335,5 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vh;
 }
